@@ -1,0 +1,1698 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display:inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 13px; line-height: 1.6; }
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+
+::-moz-selection { background: #ecd556; color: #000; text-shadow: none; }
+::selection { background: #ecd556; color: #000; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #e97052; -moz-transition: .2s ease-in-out; -o-transition: .2s ease-in-out; -webkit-transition: .2s ease-in-out; }
+a:visited { color: #e97052; }
+a:hover { color: #7d7d7d; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+blockquote { margin: 1em 0 1em 15px; padding: 0 0 0 15px; border-left: 4px solid #dbdbdb; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+/* ==|== primary styles =====================================================
+	Author: Style Hatch
+	Juuvy - 1.0.0
+	Premium Tumblr Theme
+	http://juuvy.tumblr.com
+	Theme by: Style Hatch - http://stylehatch.co
+	Support: juuvy@stylehatch.co | @stylehatch | http://www.tumblr.com/theme/32159
+	   _____ __        __        __  __      __       __
+	  / ___// /___  __/ /__     / / / /___ _/ /______/ /_
+	  \__ \/ __/ / / / / _ \   / /_/ / __ `/ __/ ___/ __ \
+	 ___/ / /_/ /_/ / /  __/  / __  / /_/ / /_/ /__/ / / /
+	/____/\__/\__, /_/\___/  /_/ /_/\__,_/\__/\___/_/ /_/
+	         /____/
+   ========================================================================== */
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background: #fff3ee;
+}
+h1, h2, h3, h4 {
+	font-family: futura-pt,'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+}
+#container {
+	position: relative;
+}
+#container:before {
+	content: "";
+	display: block;
+	position: fixed;
+	height: 8px;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #ecd556;
+	z-index: 50;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Sidebar
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#sidebar {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 200px;
+	padding: 8px 30px 0 30px;
+	margin: 0;
+	background: #ffffff;
+}
+#sidebar:after {
+	content: '';
+	display: block;
+	position: fixed;
+	top: 8px;
+	left: 0;
+	bottom: 0;
+	width: 260px;
+	background: #ffffff;
+	z-index: -1;
+}
+#sidebar h1 {
+	text-align: center;
+	font-size: 28px;
+	padding-bottom: 30px;
+	margin: 30px 0;
+	border-bottom: 1px solid #dbdbda;
+}
+#sidebar h1 a {
+	color: #000000;
+	text-decoration: none;
+}
+#sidebar h1 a:hover {
+	color: #e97052;
+}
+
+#sidebar section, #sidebar nav {
+	padding-bottom: 30px;
+	margin: 30px 0;
+	border-bottom: 1px solid #dbdbda;
+}
+#sidebar section:last-child {
+	padding-bottom: 30px;
+	margin: 0;
+	border-bottom: none;
+}
+section.description ul.community, section.description ul.util {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+section.description ul.community li, section.description ul.util li {
+	padding-right: 6px;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+section.description ul a, section.description ul a:active, section.description ul a:visited {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	border-bottom: 1px dashed #dbdbda;
+}
+section.description ul.util a, section.description ul.util a:active, section.description ul.util a:visited {
+	color: #7d7d7d;
+}
+section.description ul.community a:hover, section.description ul.util a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+section.description a.btn-xs:nth-child(2n){
+	margin-left: 10px;
+}
+.description .icon {
+	float: left;
+	margin: 4px 6px 0 0;
+}
+/*.social-links li:nth-child(8n+0) {
+	margin-right: 0;
+}*/
+
+/* ~~~~~~ NAV ~~~~~~ */
+#sidebar nav ul {
+	margin: 0;
+	padding: 0;
+}
+#sidebar nav a, #sidebar a.btn {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	background: #fceeec;
+	color: #000000;
+	padding: 4px 6px;
+	margin: 4px 0;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+#sidebar nav a {
+	font-size: 12px;
+}
+#sidebar nav a:hover, #sidebar a.btn:hover {
+	background: #ecd556;
+}
+
+/* ~~~~~~ SOCIAL-LINKS ~~~~~~ */
+.social-links ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.social-links li {
+	display: inline-block;
+}
+/*.social-links li:nth-child(8n+0) {
+	margin-right: 0;
+}*/
+.social-links li a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #7d7d7d;
+	-moz-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .15s ease-in-out;
+}
+
+.social-links li a span {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+
+
+/* ~~~~~~ AUTHORS ~~~~~~ */
+#sidebar .authors ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#sidebar .authors ul li {
+	margin-bottom: 8px;
+}
+#sidebar .authors ul li:last-child {
+	margin-bottom: 0;
+}
+#sidebar .authors ul li img {
+	margin-right: 4px;
+}
+#sidebar .authors ul li a {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+	border-bottom: 1px dashed #dbdbda;
+}
+#sidebar .authors ul li a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+
+/* ~~~~~~ TWITTER ~~~~~~ */
+#sidebar .recent-updates .tweet {
+	font-size: 14px;
+	font-style: italic;
+	padding-bottom: 24px;
+	margin-bottom: 6px;
+	background: url(http://static.tumblr.com/fftf9xi/PFRlrl8ti/tweet-bubble.png) bottom left no-repeat;
+}
+#sidebar .recent-updates .tweet_wrapper p {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px dashed #dbdbda;
+}
+#sidebar .recent-updates .tweet_wrapper p:last-child {
+	margin-bottom: 8px;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+#sidebar .recent-updates a.timeago {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+}
+#sidebar .recent-updates a.timeago:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+
+/* ~~~~~~ FLICKR ~~~~~~ */
+.flickr-feed ul.flickrfeed {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.flickr-feed ul.flickrfeed li {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	margin-right: 10px;
+}
+.flickr-feed ul.flickrfeed li:nth-child(3n+3) {
+	margin-right: 0;
+}
+.flickr-feed ul.flickrfeed li:nth-child(1n+3) {
+	margin-top: 10px;
+}
+.flickr-feed ul.flickrfeed li img {
+	width: 60px;
+	height: auto;
+}
+
+/* ~~~~~~ LIKES ~~~~~~ */
+#likes {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#likes li {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px dashed #dbdbda;
+}
+#likes li:last-child {
+	margin-bottom: 6px;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.liked-posts img {
+	margin-top: 4px;
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0, 0.15);
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0, 0.15);
+}
+.liked-posts img {
+   max-width: 100% !important;
+}
+.like_video object, .like_video embed, .like_photoset object, .like_photoset embed, .like_text object, .like_text embed {
+   width: 100%;
+}
+.like_post_body {
+	margin: 0 !important;
+}
+.liked-posts p.like_temp {
+	margin-bottom: 10px;
+}
+.like_quote {
+	font-size: 15px;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+}
+.like_link, .like_title {
+	font-size: 15px;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+}
+.liked-posts blockquote {
+	margin: 8px 0 8px 8px;
+	padding-left: 8px;
+	border-left: 1px solid #7d7d7d;
+}
+.post_info_bottom {
+	display: block !important;
+	margin-top: 4px;
+}
+.post_info_bottom .via {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #000000;
+}
+.post_info_bottom a, .post_info_bottom a:active, .post_info_bottom a:visited {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+	border-bottom: 1px dashed #dbdbda;
+}
+.post_info_bottom a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+
+/* ~~~~~~ FOLLOWS ~~~~~~ */
+.follows ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.follows li {
+	line-height: 0;
+	margin: 0 5px 6px 0;
+	padding: 0;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+.follows li a:before {
+	content: '';
+	display: none;
+}
+
+/* ~~~~~~ Copyright/source ~~~~~~ */
+#sidebar .bottom {}
+#sidebar .bottom ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 11px;
+	color: #7d7d7d;
+}
+#sidebar .bottom li.credit, #sidebar .bottom li.tumblr {
+	font-style: italic;
+}
+#sidebar .bottom li a, #sidebar .bottom li a:active, #sidebar .bottom li a:visited {
+	text-decoration: none;
+	color: #7d7d7d;
+	border-bottom: 1px dashed #dbdbda;
+	font-weight: bold;
+}
+#sidebar .bottom li a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Main
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#search {
+	display: block;
+	position: fixed;
+	top: 8px;
+	right: 20px;
+	z-index: 500;
+}
+#search a.btn-box, #search a.btn-box:hover {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 35px;
+	height: 35px;
+	background: #ecd556 url(http://static.tumblr.com/fftf9xi/zVKlrl8u0/sprites.png) -25px -20px no-repeat;
+	border: none;
+}
+#search .search-base {
+	display: none;
+	background: #ecd556;
+	padding: 42px 15px 15px;
+	width: 220px;
+}
+#search h4 {
+	margin: 15px 0 4px 0;
+}
+#search input {
+	padding: 6px 4px;
+	width: 208px;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#search ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#search ul li {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	margin-right: 4px;
+}
+#search a, #search a:active, #search a:visited {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	border-bottom: 1px dashed #000000;
+	padding: 2px 2px 0 2px;
+}
+#search a:hover {
+	background: #000000;
+	color: #ffffff;
+	border-bottom: 1px dotted #000000;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Main
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#main {
+	display: block;
+	padding-top: 56px;
+	margin: 0 0 0 300px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	General Post Styles
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+article .article-base {
+	border-bottom: 10px solid #e97052;
+	background: #ffffff;
+	display: block;
+	padding: 15px;
+	width: 500px;
+	overflow-y: hidden;
+/*	border-top: 10px solid #e97052;*/
+}
+article {
+	box-shadow: 3px 2px 5px -1px rgba(0,0,0,.2);
+	display: block;
+	margin-bottom: 30px;
+}
+#main.deco article {
+	box-shadow: 7px 0px 5px -5px rgba(0,0,0,.2);
+}
+#main.deco article .article-base {
+	border-top: 10px solid #e97052;
+	border-bottom: none;
+}
+#main.deco article.photo, #main.deco article.photoset {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/Qdclrl8vg/border-photo.png) bottom right repeat-x;
+}
+#main.deco article.text, #main.deco article.ask {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/vxjlrl8vt/border-text.png) bottom right repeat-x;
+}
+#main.deco article.quote {
+	box-shadow: none;
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/JIOlrl8w6/border-quote.png) bottom left no-repeat;
+}
+#main.deco article.quote .article-base {
+	box-shadow: 7px 3px 5px -6px rgba(0,0,0,.2);
+}
+#main.deco article.link {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/13tlrl8wq/border-link.png) bottom right repeat-x;
+}
+#main.deco article.chat {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/Csulrl8xt/border-chat.png) bottom right repeat-x;
+}
+#main.deco article.audio {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/bvSlrl8ya/border-audio.png) bottom right repeat-x;
+}
+#main.deco article.video {
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/EYxlrl8yl/border-video.png) bottom right repeat-x;
+}
+
+#main.deco article.disqus, #main.deco article.notes {
+	box-shadow: none;
+	padding-bottom: 25px;
+	background: url(http://static.tumblr.com/fftf9xi/JIOlrl8w6/border-quote.png) -100px 100% no-repeat;
+}
+#main.deco article.disqus .article-base, #main.deco article.notes .article-base {
+	box-shadow: 7px 3px 5px -6px rgba(0,0,0,.2);
+}
+article {
+	width: 530px;
+}
+article.t_xs, body.index-page article.t_xs {
+	width: 250px;
+}
+article.t_xx, body.index-page article.t_xx {
+	width: 530px;
+}
+article.t_xl, body.index-page article.t_xl {
+	width: 810px;
+}
+article.t_xs .article-base, body.index-page article.t_xs .article-base {
+	width: 220px;
+}
+article.t_xx .article-base, body.index-page article.t_xx .article-base {
+	width: 500px;
+}
+article.t_xl .article-base, body.index-page article.t_xl .article-base {
+	width: 780px;
+}
+article.t_xs header img {
+	max-width: 220px;
+	height: auto;
+}
+article.t_xx header img {
+	max-width: 500px;
+	height: auto;
+}
+article.t_xl header img {
+	max-width: 780px;
+	height: auto;
+}
+article.t_xs h2 {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+article h2, article.t_xx h2, article.t_xl h2 {
+	font-size: 24px;
+	margin: 0 0 6px 0;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+article p {
+	margin: 0 0 12px 0;
+}
+article.t_xs h2 {
+	font-size: 18px;
+}
+article header {
+	margin-bottom: 12px;
+}
+article section h2 {
+	margin: 6px 0;
+}
+article img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* At least medium size for permalink pages */
+.permalink-page article.t_xs {
+	width: 530px;
+}
+.permalink-page article.t_xs .article-base {
+	width: 500px;
+}
+.permalink-page article.t_xs header img {
+	max-width: 500px;
+	height: auto;
+}
+.permalink-page article.t_xs h2 {
+	font-size: 24px;
+	margin: 0 0 6px 0;
+}
+
+article ul.credit {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+article ul.credit li {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+article ul.credit li.author {
+	display: block;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #7d7d7d;
+	margin-bottom: 8px;
+}
+article ul.credit li.author img {
+	float: left;
+	margin: 3px 8px 0 0;
+}
+article ul.credit li.author.not-english a:before {
+	content:"\A";
+	white-space:pre;
+}
+article ul.credit li.author a {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #e97052;
+	border-bottom: 1px dashed #dbdbda;
+}
+article ul.credit li.author a:hover {
+	border-bottom: 1px dotted #e97052;
+}
+article ul.credit li.reblog {
+	margin-right: 8px;
+}
+article ul.credit li.reblog, article ul.credit li.source {
+	color: #7d7d7d;
+	font-style: italic;
+}
+
+/* ~~~~~~ TEXT ~~~~~~ */
+article.text h2 a, article.text h2 a:visited, article.text h2 a:active {
+	color: #000000;
+	text-decoration: none;
+}
+article.text h2 a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+article a.btn {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	background: #fceeec;
+	color: #000000;
+	padding: 4px 6px;
+	margin: 4px 0;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+article.text a.btn:hover {
+	background: #ecd556;
+}
+/* ~~~~~~ PHOTO ~~~~~~ */
+article.photo a.highres {
+	float: right;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	background: #fceeec;
+	color: #000000;
+	padding: 2px 6px;
+	margin: 0;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+article.photo a.highres:hover {
+	background: #ecd556;
+}
+article.photo header img {
+	width: 100%;
+	height: auto;
+}
+/* ~~~~~~ PHOTOSET ~~~~~~ */
+/* ~~~~~~ QUOTE ~~~~~~ */
+article.quote header p {
+	margin-top: 0;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+article.t_xs.quote header p {
+	font-size: 14px;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+/* ~~~~~~ LINK ~~~~~~ */
+article.link h2 a {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	background: #ecd556;
+	color: #000000;
+	padding: 4px 18px;
+	margin: 4px 0;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+article.link h2 a:hover {
+	background: #e97052;
+	color: #ffffff;
+}
+article.t_xs.link h2 {
+	font-size: 14px;
+}
+
+article.chat section .odd {
+	background: #fceeec;
+	padding: 6px 10px;
+	margin: 6px 0;
+}
+article.chat section .even {
+	background: #ffffff;
+	padding: 6px 10px;
+	margin: 6px 0;
+}
+article.chat section strong {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+/* ~~~~~~ AUDIO ~~~~~~ */
+article.audio header {
+}
+article.audio section {
+	display: block;
+}
+article.audio .content_wrap_embed {
+	margin: 0 0 20px 0;
+}
+article.audio .content_wrap_embed iframe[src*="spotify"] {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: -76px;
+}
+article.audio .content_wrap_embed iframe[src*="soundcloud"] {
+  width: 100% !important;
+  height: 180px !important;
+}
+article.audio .content_wrap_embed iframe[src*="bandcamp"] {
+  width: 100% !important;
+}
+article.audio .content_wrap_embed iframe.tumblr_audio_player {
+  width: 100% !important;
+}
+
+
+article.audio .album-case {
+	float: left;
+	margin-right: 12px;
+}
+article.audio img.album-art {
+	max-width: 500px;
+	height: auto;
+}
+article.t_xs.audio img.album-art {
+	max-width: 220px;
+	height: auto;
+}
+.permalink-page article.t_xs.audio img.album-art {
+	max-width: 500px;
+	height: auto;
+}
+article.audio .player {
+	background: #e4e4e4;
+	line-height: 0;
+}
+article.audio .track, article.audio .artist, article.audio .album, article.audio .plays {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #7d7d7d;
+	margin: 8px 0;
+}
+article.audio .artist strong, article.audio .album strong, article.audio .plays strong {
+	color: #000000;
+	font-size: 14px;
+}
+article.audio .track strong {
+	font-size: 24px;
+	color: #e97052;
+}
+article.t_xs.audio .track strong {
+	font-size: 18px;
+}
+article.audio .player p.inline-plays {
+	display: inline;
+	float: right;
+	margin-top: 12px;
+	padding: 0 8px 0 0;
+}
+article.audio .player p.inline-plays, article.audio .player p.inline-plays strong {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #000000;
+}
+article.t_xx.audio .plays {
+	display: none;
+}
+article.t_xs.audio .inline-plays {
+	display: none;
+}
+article.t_xl.audio .inline-plays {
+	display: none;
+}
+article.audio .caption {
+	border-top: 1px solid #dbdbda;
+	padding-top: 12px;
+}
+/* ~~~~~~ VIDEO ~~~~~~ */
+/* ~~~~~~ ASK ~~~~~~ */
+article.ask header {
+	font-size: 14px;
+	font-style: italic;
+	padding: 0 8px 24px;
+	margin-bottom: 0;
+	background: url(http://static.tumblr.com/fftf9xi/PFRlrl8ti/tweet-bubble.png) bottom left no-repeat;
+}
+article.ask p.asker {
+	display: block;
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #7d7d7d;
+	margin-bottom: 8px;
+}
+article.ask p.asker img {
+	float: left;
+	margin: 3px 8px 0 0;
+}
+article.ask p.asker a {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #e97052;
+	border-bottom: 1px dashed #dbdbda;
+}
+article.ask p.asker a:hover {
+	border-bottom: 1px dotted #e97052;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Post Footer
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+article footer {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #ecd556;
+}
+article footer ul {
+	margin: 0 0 8px 0;
+	padding: 0;
+	list-style-type: none;
+}
+article footer ul:last-child {
+	margin: 0;
+}
+article footer ul li {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+article footer ul li > a, article footer ul li > a:active, article footer ul li > a:visited,
+article footer ul li a.share_this_over, article footer ul li a.share_this_over:active, article footer ul li a.share_this_over:visited {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+	border-bottom: 1px dashed #dbdbda;
+}
+article footer ul li > a:hover,
+article footer ul li a.share_this_over:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+article footer ul li.label {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+}
+article footer ul li.time, article footer ul li.notes, article footer ul li.comments {
+	margin: 0 8px 4px 0;
+}
+article footer ul li.time:before, article footer ul li.notes:before, article footer ul li.comments:before {
+	content: "";
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin-right: 4px;
+	background: url(http://static.tumblr.com/fftf9xi/zVKlrl8u0/sprites.png) 0 0 no-repeat;
+}
+article footer ul li.notes:before {
+	background-position: -40px 0;
+}
+article footer ul li.comments:before {
+	background-position: -20px 0;
+}
+article footer ul li.share {
+	float: right;
+	position: relative;
+}
+.share_links_wrapper {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 100;
+}
+.share_links_wrapper a.share_this_over {
+	display: block;
+	position: absolute;
+	right: 8px;
+	bottom: 8px;
+}
+.share_links {
+	height: 140px;
+	width: 206px;
+	display: block;
+	position: absolute;
+	top: -112px;
+	left: -198px;
+	z-index: 100;
+	background: #ffffff;
+
+	-moz-box-shadow: 0 1px 5px rgba(0,0,0, 0.15);
+	-webkit-box-shadow: 0 1px 5px rgba(0,0,0, 0.15);
+}
+.share_links input {
+	margin: 10px;
+	width: 172px;
+	padding: 4px;
+	font-size: 12px;
+}
+.share_links a {
+	background-color: transparent !important;
+}
+.share_links .share-twitter {
+	display: block;
+	position: absolute;
+	left: 10px;
+}
+.share_links .share-facebook {
+	display: block;
+	position: absolute;
+	left: 110px;
+}
+.share_links .share-gplus {
+	display: block;
+	position: absolute;
+	top:80px;
+	left: 10px;
+}
+.share_links .share-pinterest {
+	display: block;
+	position: absolute;
+	top:80px;
+	left: 110px;
+}
+.share_links .share-pinterest a {
+	-moz-transition: 0s; -o-transition: 0s; -webkit-transition: 0s;
+}
+.share-buttons.visible-bar{
+	margin-bottom:10px;
+}
+.share-buttons.visible-bar .share-button {
+	display: inline-block;
+}
+article footer ul.tags li:first-child:before {
+	content: "Tags:\0000a0";
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+}
+article footer ul.tags li a {
+	border-bottom: none;
+	background: #fceeec;
+	color: #000000;
+	padding: 2px 6px;
+	margin: 0 4px 4px 0;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+article footer ul.tags li a:hover {
+	background: #ecd556;
+}
+article ul.tags li.tt_xs, article ul.tags li.tt_xx, article ul.tags li.tt_xl {
+	display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Disqus
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#disqus_thread h3 {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #7d7d7d;
+	margin: 8px 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Notes
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+ol.notes {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ol.notes li {
+	border-bottom: 1px solid #dbdbda;
+	margin: 0;
+	padding: 8px 0;
+}
+ol.notes li:last-child{
+	border-bottom: 0;
+}
+ol.notes li .action {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #000000;
+}
+ol.notes li .action a {
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	color: #7d7d7d;
+	border-bottom: 1px dashed #dbdbda;
+}
+ol.notes li .action a:hover {
+	color: #e97052;
+	border-bottom: 1px dotted #e97052;
+}
+ol.notes li blockquote {
+
+}
+
+#pagination {
+	display: block;
+	background: #e97052;
+	width: 500px;
+	text-align: center;
+
+	color: #ffffff;
+	padding: 15px;
+
+	font-family: futura-pt,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .3em;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+}
+#pagination p {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+#spin-loader {
+	float: left;
+	margin: 8px 20px 0 15px;
+}
+#pagination ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#pagination ul li {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+#pagination ul li.prev {
+	float: left;
+}
+#pagination ul li.next {
+	float: right;
+}
+#pagination ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px dashed #ffffff;
+}
+#pagination ul li a:hover {
+	border-bottom: 1px dotted #ffffff;
+}
+
+#infscr-loading { display: none !important; visibility: hidden !important; }
+
+#tumblr_controls {
+	position: fixed !important;
+	top: 13px !important;
+	right: 72px !important;
+}
+
+
+/* Less than 1140px */
+@media only screen
+and (max-width: 1139px) {
+	article .article-base {
+		width: 500px !important;
+	}
+	article {
+		width: 530px !important;
+	}
+	article.t_xs .article-base {
+		width: 220px !important;
+	}
+	article.t_xs {
+		width: 250px !important;
+	}
+	article.audio img.album-art {
+		max-width: 500px !important;
+		height: auto;
+	}
+	article.audio.t_xs img.album-art {
+		max-width: 220px !important;
+		height: auto;
+	}
+
+	.inline-plays {
+		display: none !important;
+	}
+}
+/* Less than 860px */
+@media only screen
+and (max-width: 859px) {
+	article .article-base {
+		width: 220px !important;
+	}
+	article {
+		width: 250px !important;
+	}
+	article img {
+		max-width: 100% !important;
+		height: auto;
+	}
+	article.audio img.album-art {
+		max-width: 220px !important;
+		height: auto;
+	}
+	article h2 {
+		-webkit-hyphens: auto !important;
+		-moz-hyphens: auto !important;
+		hyphens: auto !important;
+		font-size: 14px !important;
+	}
+	article.quote header p {
+		-webkit-hyphens: auto !important;
+		-moz-hyphens: auto !important;
+		hyphens: auto !important;
+		font-size: 14px !important;
+	}
+	.inline-plays {
+		display: none !important;
+	}
+	#pagination {
+		width: 220px !important;
+	}
+}
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxContent{margin-top:32px; overflow:visible;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{background:#000; padding:1px;}
+        #cboxLoadingGraphic{background:url(http://static.tumblr.com/fftf9xi/rkklqu1ni/loading.gif) no-repeat center center;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxTitle{position:absolute; top:-22px; left:0; color:#fff;}
+        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(http://static.tumblr.com/fftf9xi/1dslqu1o1/controls.png) no-repeat 0 0;}
+        #cboxPrevious{background-position:0px 0px; right:44px;}
+        #cboxPrevious.hover{background-position:0px -25px;}
+        #cboxNext{background-position:-25px 0px; right:22px;}
+        #cboxNext.hover{background-position:-25px -25px;}
+        #cboxClose{background-position:-50px 0px; right:0;}
+        #cboxClose.hover{background-position:-50px -25px;}
+        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+        .cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+        .cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   ========================================================================== */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width: 590px) {
+	#sidebar {
+		display: block;
+		position: static !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 28px 0 0 0;
+		margin: 0;
+	}
+	#sidebar:after {
+		display: none;
+	}
+	#sidebar-inner {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#sidebar h1 {
+		padding-bottom: 20px;
+		margin: 20px 0;
+	}
+	/* ~~~~~~ NAV ~~~~~~ */
+	#sidebar nav ul {
+		margin: 0;
+		padding: 0;
+	}
+	#sidebar nav ul li {
+		margin-right: 6px;
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+	}
+	#sidebar nav a {
+		font-size: 10px;
+	}
+	#sidebar section, #sidebar nav {
+		padding-bottom: 20px;
+		margin: 20px 0;
+	}
+	#sidebar section {
+		display: none;
+	}
+	#sidebar section.social-links, #sidebar section.description {
+		display: block;
+	}
+	#sidebar section.social-links {
+		margin: 20px 0;
+		padding: 0;
+		border-bottom: none;
+	}
+	#search {
+		display: none;
+	}
+	#main {
+		width: 100%;
+		margin: 0;
+		padding: 20px 0;
+	}
+	#isotope {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	article, article.t_xs, article.t_xx, article.t_xl {
+		width: 100% !important;
+	}
+	article .article-base, article.t_xs .article-base, article.t_xx .article-base, article.t_xl .article-base {
+		padding: 15px 0;
+		width: 100% !important;
+	}
+	article header img, article.t_xs header img, article.t_xx header img, article..t_xl header img {
+		max-width: 100% !important;
+		height: auto;
+	}
+	article header, article section, article footer {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	#pagination {
+		width: 80% !important;
+		margin: 0 auto;
+	}
+	#tumblr_controls {
+		position: fixed !important;
+		top: 13px !important;
+		right: 6px !important;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+	article .article-base, article.t_xs .article-base, article.t_xx .article-base, article.t_xl .article-base {
+		width: 650px !important;
+	}
+	article, article.t_xs, article.t_xx, article.t_xl {
+		width: 680px !important;
+	}
+	article img {
+		max-width: 100% !important;
+		height: auto;
+	}
+	article.audio img.album-art {
+		max-width: 400px !important;
+		height: auto;
+	}
+	article h2 {
+		font-size: 24px !important;
+		-webkit-hyphens: none !important;
+		-moz-hyphens: none !important;
+		hyphens: none !important;
+	}
+	article.quote header p {
+		font-size: 24px !important;
+		-webkit-hyphens: none !important;
+		-moz-hyphens: none !important;
+		hyphens: none !important;
+	}
+	.inline-plays {
+		display: none !important;
+	}
+	#pagination {
+		width: 650px !important;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	article .article-base, article.t_xs .article-base, article.t_xx .article-base, article.t_xl .article-base {
+		width: 400px !important;
+	}
+	article, article.t_xs, article.t_xx, article.t_xl {
+		width: 430px !important;
+	}
+	article img {
+		max-width: 100% !important;
+		height: auto;
+	}
+	article.audio img.album-art {
+		max-width: 400px !important;
+		height: auto;
+	}
+	article h2 {
+		font-size: 24px !important;
+		-webkit-hyphens: none !important;
+		-moz-hyphens: none !important;
+		hyphens: none !important;
+	}
+	article.quote header p {
+		font-size: 24px !important;
+		-webkit-hyphens: none !important;
+		-moz-hyphens: none !important;
+		hyphens: none !important;
+	}
+	.inline-plays {
+		display: none !important;
+	}
+	#pagination {
+		width: 400px !important;
+	}
+}
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   ========================================================================== */
+
+@media print {
+	* { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+	a, a:visited { text-decoration: underline; }
+	a[href]:after { content: " (" attr(href) ")"; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+	pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+	thead { display: table-header-group; } /* h5bp.com/t */
+	tr, img { page-break-inside: avoid; }
+	img { max-width: 100% !important; }
+	@page { margin: 0.5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3 { page-break-after: avoid; }
+}
+
+/* =============================================================================
+    Style Hatch Modal - Customimze Menu
+    ========================================================================== */
+
+.customize-embed:before {
+	content: "Flash Disabled in Customize Mode";
+	height: 24px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	margin-top: 0;
+	font-weight: normal;
+	font-size: 11px;
+	color: #AAAAAA;
+	font-family: "Helvetica Neue", sans-serif !important;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	letter-spacing: 1px;
+}
+.customize-embed {
+	-moz-box-shadow: inset 0 1px 0px rgba(100, 100, 100, 1);
+	-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+	background: rgb(51,51,51);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(51,51,51,1) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(51,51,51,1)), color-stop(100%,rgba(0,0,0,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(center, ellipse cover,  rgba(51,51,51,1) 0%,rgba(0,0,0,1) 100%);
+}
+.customize-embed iframe, .customize-embed embed, .customize-embed object {
+	display: none;
+}
+.customize-audio {
+	display: block;
+	height: 27px;
+	width: 207px;
+	background-image: url(http://static.tumblr.com/fftf9xi/r0blwhruz/audio-players.png);
+}
+.customize-audio.white {
+	background-position: 0px 0px;
+}
+.customize-audio.grey {
+	background-position: 0px -27px;
+}
+.customize-audio.black {
+	background-position: 0px -54px;
+}
+.customize-audio embed {
+	display: none;
+}
